@@ -1,0 +1,14 @@
+<div class="search">
+  <label for="search">Search Super-hero </label>
+  <input  type="text" name="search" [(ngModel)]="search" placeholder="search" id="heroe">
+</div>
+
+<div class="board" >
+  <div class="card" *ngFor="let info of heroes | filtrar:search">
+    <img [src]="info.images.sm">
+    <h3>{{info.name}}</h3>
+    <p>{{info.biography.firstAppearance}}</p>
+    <p>{{info.biography.placeOfBirth}}</p>
+  </div>
+</div>
+

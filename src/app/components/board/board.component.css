@@ -1,0 +1,18 @@
+.card{
+  display: flex;
+  margin-bottom: 2em;
+  flex-direction: column;
+  border: solid 3px #000000;
+  width: 70%;
+  text-align: center;
+}
+
+.search{
+  margin-bottom: 2.3em;
+  font-size: 20px;
+}
+
+.board{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
